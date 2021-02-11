@@ -13,7 +13,7 @@
     z-index: 1;
   }
   
-  .product-rating {
+  .product__rating {
     display: flex;
   }
   
@@ -32,12 +32,12 @@
     color: #111;
   }
   
-  .product-price {
+  .product__price {
     margin-top: 5px;
     margin-bottom: 5px;
   }
   
-  .product-info {
+  .product__info {
     height: 100px;
     margin-bottom: 15px;
   }

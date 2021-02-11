@@ -5,7 +5,7 @@ import Home from './Home'
 
 function App() {
   return (
-    // BEM
+    // BEM convention
     <div className="App">
       <Header />
       <Home />

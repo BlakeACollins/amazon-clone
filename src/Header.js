@@ -9,35 +9,35 @@ function Header() {
         <>
         <div className='header'>
             {/*LOGO*/}
-            <img className='header-logo' src={Logo} alt='amazon logo'/>
+            <img className='header__logo' src={Logo} alt='amazon logo'/>
 
             {/*SEARCH BAR*/}
-            <div className='header-search'>
-                <input className='header-search-input' type='text'>
+            <div className='header__search'>
+                <input className='header__search__nput' type='text'>
                 </input>
-                <SearchIcon className='header-search-icon' />
+                <SearchIcon className='header__search__icon' />
             </div>
             {/*HEADER NAV, LEFT SIDE*/}
-            <div className='header-nav'>
+            <div className='header__nav'>
 
-                <div className='header-options'>
-                <span className='header-option-line-one'>Hello Guest</span>
-                <span className='header-option-line-two'>Sign In</span>
+                <div className='header__options'>
+                <span className='header__option__line__one'>Hello Guest</span>
+                <span className='header__option__line__two'>Sign In</span>
                 </div>
 
-                <div className='header-options'>
-                    <span className='header-option-line-one'>Returns</span>
-                    <span className='header-option-line-two'>& Orders</span>
+                <div className='header__options'>
+                    <span className='header__option__line__one'>Returns</span>
+                    <span className='header__option__line__two'>& Orders</span>
                 </div>
 
-                <div className='header-options'>
-                    <span className='header-option-line-one'>Your</span>
-                    <span className='header-option-line-two'>Prime</span>
+                <div className='header__options'>
+                    <span className='header__option__line__one'>Your</span>
+                    <span className='header__option__line__two'>Prime</span>
                 </div>
 
-                <div className='option-shoppingBasket'>
-                <ShoppingBasket className='basket-icon' />
-                <span className='header-shoppingBasketCount'>0</span>               
+                <div className='option__shoppingBasket'>
+                <ShoppingBasket className='basket__icon' />
+                <span className='header__shoppingBasketCount'>0</span>               
             </div>
             </div>
         </div>

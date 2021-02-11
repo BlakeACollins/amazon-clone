@@ -7,55 +7,55 @@
     top: 0;
     z-index: 100;
 }
-.header-logo{
+.header__logo{
     width: 100px;
     object-fit: contain;
     margin: 0 20px;
     margin-top: 10px;
 }
-.header-search{
+.header__search{
     display: flex;
     flex: 1;
     align-items: center;
     border-radius: 25px;
     
 }
-.header-search-input{
+.header__search__input{
     height: 12px;
     padding: 10px;
     border: none;
     width: 90%;
 }
-.header-search-icon{
+.header__search__icon{
     padding: 5px;
     height: 22px !important;
     background-color: #cd9042;
 
 }
-.header-nav{
+.header__nav{
     display: flex;
     justify-content: space-evenly;
 }
-.header-options{
+.header__options{
     color: #fff;
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
 }
-.header-option-line-one{
+.header__option__line__one{
     font-size: 12px;
 }
-.header-option-line-two{
+.header__option__line__two{
     font-size: 16px;
     font-weight: 600;
 }
-.option-shoppingBasket{
+.option__shoppingBasket{
     display: flex;
     color:#ffF;
 
 }
 
-.header-shoppingBasketCount{
+.header__shoppingBasketCount{
     margin: 0 16px 10px 10px;
 }
