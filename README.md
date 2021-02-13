@@ -1,15 +1,8 @@
+# Amazon Clone
+Making my own Amazon! This is a Full-Stack React app with full e-commerence functionality. Made with React, CSS, Router, Hooks, Firebase, and a few Material UI icons.
+
 # Getting Started with Create React App
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/8.2.7/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-    firebase deploy --only hosting:evergreen-clone
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/8.2.7/firebase-analytics.js"></script>
-
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
