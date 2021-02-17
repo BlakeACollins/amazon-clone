@@ -5,7 +5,7 @@ Features :
 
 * Add to basket
 * Checkout page with remove from basket option
-* Subtotal component with total amount of things in basket
+* Subtotal component with total amount of items in basket
 * User Login and Authentication
 
 # Getting Started with Create React App
