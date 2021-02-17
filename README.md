@@ -1,5 +1,5 @@
 # Amazon Clone
-Making my own Amazon! This is a Full-Stack React app. Made with React, CSS, Router, Hooks, Firebase, and a few Material UI icons.
+Making my own Amazon! This is a Full-Stack React app. Made with React, CSS, Router, Hooks, Context API, Firebase, and a few Material UI icons.
 
 Features :
 
