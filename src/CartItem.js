@@ -25,7 +25,8 @@ function CartItem({ id, cartItem }) {
     return (
         <div className="CartItem">
             <div className="CartItem-image">
-                <img src={cartItem.image} />
+                <img src={cartItem.image} 
+                alt='basket'/>
             </div>
             <div className="CartItem-info">
                 <div className="CartItem-title">
