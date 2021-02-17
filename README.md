@@ -3,10 +3,10 @@ Making my own Amazon! This is a Full-Stack React app. Made with React, CSS, Rout
 
 Features :
 
-Add to basket
-Checkout page with remove from basket option
-Subtotal component with total amount of things in basket
-User Login and Authentication
+* Add to basket
+* Checkout page with remove from basket option
+* Subtotal component with total amount of things in basket
+* User Login and Authentication
 
 # Getting Started with Create React App
 
