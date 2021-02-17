@@ -1,5 +1,12 @@
 # Amazon Clone
-Making my own Amazon! This is a Full-Stack React app with full e-commerence functionality. Made with React, CSS, Router, Hooks, Firebase, and a few Material UI icons.
+Making my own Amazon! This is a Full-Stack React app. Made with React, CSS, Router, Hooks, Firebase, and a few Material UI icons.
+
+Features :
+
+Add to basket
+Checkout page with remove from basket option
+Subtotal component with total amount of things in basket
+User Login and Authentication
 
 # Getting Started with Create React App
 
