@@ -2,6 +2,7 @@
 Making my own Amazon! This is a Full-Stack React web app. Made with React, CSS, Router, Hooks, Context API, Firebase, and a few Material UI icons.
 
 Find it [here](https://clone-3d506.web.app/)
+STILL IN PRODUCTION
 
 Features :
 
@@ -9,6 +10,7 @@ Features :
 * Checkout page with remove from basket option
 * Subtotal component with total amount of items in basket
 * User Login and Authentication with Firebase
+* Stripe payments
 
 # Getting Started with Create React App
 
