@@ -11,6 +11,7 @@ import Home from './Home';
 import Footer from './Footer'
 import Checkout from './Checkout';
 import Login from './Login';
+import Payment from './Payment'
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
 
@@ -53,11 +54,13 @@ function App() {
           </Route>
           <Route path='/payment'>
             <Header />
+            <Payment />
               <h1>I am a payment page</h1>
           </Route>
           <Route path='/'>
             <Header />
             <Home />
+            <Footer />
           </Route>
         </Switch>
       </div>
