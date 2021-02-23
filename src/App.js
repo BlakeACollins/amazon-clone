@@ -44,17 +44,20 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
-          <Route path='/checkout'>
-            <Header/>
-            <Checkout />
-          </Route>
           <Route path='/login'>
             <Login />
           </Route>
+          <Route path='/checkout'>
+            <Header />
+            <Checkout />
+          </Route>
+          <Route path='/payment'>
+            <Header />
+              <h1>I am a payment page</h1>
+          </Route>
           <Route path='/'>
-            <Header/>
+            <Header />
             <Home />
-            <Footer />
           </Route>
         </Switch>
       </div>
