@@ -14,10 +14,13 @@ import Login from './Login';
 import Payment from './Payment'
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
+import { loadStripe } from '@stripe/stripe-js'
+import { Elements } from '@stripe/react-stripe-js'
 
+const promise = loadStripe('pk_test_51IOAieJA7RSaElYqFpUp3gk767J0hwp3EdQI3JO7YnHSvvmy1HgQUkQ1cCsBVq6ZmTmvOIjkj3dNhEk5ZPoIs6do00VxfRJXGz');
 
 function App() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
     const unsubscribe= auth.onAuthStateChanged((authUser => {
@@ -54,8 +57,9 @@ function App() {
           </Route>
           <Route path='/payment'>
             <Header />
+            <Elements stripe={promise}>
             <Payment />
-              <h1>I am a payment page</h1>
+            </Elements>
           </Route>
           <Route path='/'>
             <Header />
