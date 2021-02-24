@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import CheckoutProduct from './CheckoutProduct';
 import './Payment.css'
 import { useStateValue } from './StateProvider'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format'
 import { getBasketTotal } from './reducer'
+import axios from './axios'
 
 function Payment() {
     const [{ basket, user, }, dispatch] = useStateValue();
-
+    const history = useHistory();
 
     const stripe = useStripe();
     const elements = useElements();
@@ -18,9 +19,39 @@ function Payment() {
     const [processing, setProcessing] = useState("");
     const [error, setError] = useState(null);
     const [disabled, setDisable] = useState(true);
+    const [clientSecret, setClientSecret ] = useState(true);
 
-    const handleSubmit = e => {
+    //Generate special Stripe secret for payment
+    useEffect(() => {
+        const getClientSecret = async () => {
+            const respone = await axios({
+                method: 'post',
+                url: `/payments/create?total=${getBasketTotal(basket) * 100}`
+            });
+            setClientSecret(respone.data.clientSecret)
+        }
+        getClientSecret();
+    }, [basket])
 
+    const handleSubmit = async (event) => {
+            event.preventDefault();
+            setProcessing(true);
+
+            //Client Secret for stripe payments
+
+
+            const payload = await stripe.confirmCardPayment(clientSecret, {
+                payment_method:{
+                    card: elements.getElement(CardElement)
+                }
+            }).then(({ paymentIntent }) => {
+                //payment paymentIntent
+                setSucceeded(true);
+                setError(null)
+                setProcessing(false)
+
+                history.replaceState('/orders')
+            })
     }
 
     const handleChange = e =>{
