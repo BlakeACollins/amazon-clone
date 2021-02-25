@@ -16,4 +16,5 @@ const firebaseConfig = {
     const db = firebaseApp.firestore();
     const auth = firebase.auth();
 
-export { db, auth };
+// eslint-disable-next-line import/no-anonymous-default-export
+export default { db, auth };
