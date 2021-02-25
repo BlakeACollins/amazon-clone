@@ -10,7 +10,6 @@ Features :
 * Checkout page with remove from basket option
 * Subtotal component with total amount of items in basket
 * User Login and Authentication with Firebase
-* Database with Firestore
 * Stripe payments
 
 # Getting Started with Create React App
